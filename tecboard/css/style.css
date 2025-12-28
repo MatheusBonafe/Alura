@@ -1,0 +1,184 @@
+
+/*DEFINICAO*/
+
+@font-face {
+    font-family: "Unbounded";
+    src: url("../fontes/Unbounded/Unbounded-VariableFont_wght.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fontes/Poppins/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{ 
+    background-color: #0E1014;
+    color: #FFFFFF;
+    
+}
+header img{
+    display: block;
+    margin: 75px 0 0 360px;
+}
+
+h1{
+    font-size: 64px;
+    color: #FFFFFF;
+    font-family: "Unbounded", sans-serif;
+    text-align: center;
+    margin-top: 60px;
+
+}
+
+h1 span{
+    color: #9747FF;
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+
+
+a{  
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: #9747FF;
+    width: 340px;
+    height: 66px;
+    display:block;
+    text-align: center;
+    line-height: 66px;
+    border-radius: 36px;
+    margin: 40px auto;
+}
+
+a:hover{
+    background-color: #8233E8;
+
+
+}
+
+section img{
+
+    display: block;
+    width: 660px;
+    height: 446px;
+    margin: 0 auto;
+}
+
+@media(max-width: 768px){
+    
+    header img{
+        margin: 65px 0 0 60px;
+    }
+
+    p{
+        width: 648px;
+
+    }
+}
+
+@media(max-width: 375px ){
+    header img{
+        margin: 32px 0 0 16px;
+
+    }
+    h1{
+        font-size: 41px;
+    }
+
+    p{
+        font-size: 20px ;
+        width: 340px;
+
+    }
+    a{
+        font-size: 20px ;
+        width: 251px;
+
+    }
+    section img{
+        width: 340px;
+        height: 230;
+    }
+
+    
+
+    
+}
+        
+/*GITHUB*/
+
+/* Container fixo no canto */
+.footer-social {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna (um sobre o outro) */
+    gap: 15px;              /* Espaço entre os dois ícones */
+    z-index: 999;
+}
+
+/* Reset para os links (sobrescrevendo seu estilo global de 'a') */
+.social-icon-link {
+    display: block !important;
+    width: auto !important;
+    height: auto !important;
+    background-color: transparent !important;
+    margin: 0 !important;
+    line-height: 0 !important;
+    padding: 0;
+}
+
+/* Estilo das imagens */
+.social-icon-link img {
+    width: 38px;
+    height: 38px;
+    transition: transform 0.3s ease;
+    filter: brightness(0) invert(1); /* Deixa os ícones brancos */
+}
+
+.social-icon-link img:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+/* Estilo das imagens dentro do container social */
+.social-icon-link img {
+    width: 38px;      /* Força a largura para 38px */
+    height: 38px;     /* Força a altura para 38px */
+    display: block;
+    object-fit: contain; /* Garante que a imagem de 512px caiba nos 38px sem distorcer */
+    transition: transform 0.3s ease;
+    
+    /* se minha logo-branco.png já for branca, posso remover o filter abaixo */
+    /* Se ela for de outra cor e eu quiser branca, mantenha-o */
+    filter: brightness(0) invert(1); 
+}
+
+.social-icon-link img:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+
